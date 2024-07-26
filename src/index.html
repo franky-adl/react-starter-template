@@ -7,41 +7,9 @@
             content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
         />
         <title>React Starter Template</title>
-        <style>
-            /* Most resets from https://www.joshwcomeau.com/css/custom-css-reset/ */
-            * {
-                margin: 0;
-            }
-            *,
-            *::before,
-            *::after {
-                box-sizing: border-box;
-            }
-            img,
-            picture,
-            video,
-            canvas,
-            svg {
-                display: block;
-                max-width: 100%;
-            }
-            input,
-            button,
-            textarea,
-            select {
-                font: inherit;
-            }
-            html,
-            body {
-                width: 100%;
-                height: 100%;
-                -webkit-font-smoothing: antialiased;
-            }
-            #root {
-                width: 100%;
-                height: 100%;
-            }
-        </style>
+        <!-- The usual css resets are already included in tailwind preflight, e.g. usual examples from https://www.joshwcomeau.com/css/custom-css-reset/ -->
+        <!-- parcel's build process naturally imports the necessary tailwind css classes for you, https://tailwindcss.com/docs/guides/parcel-->
+        <link href="./index.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <div id="root"></div>
