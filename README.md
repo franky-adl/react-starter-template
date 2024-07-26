@@ -4,5 +4,5 @@ A starter template for React based projects.
 
 ## How to run locally
 
-1. npm i
-2. npm start
+1. pnpm install
+2. pnpm start
