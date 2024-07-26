@@ -6,9 +6,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.dark};
     font-family: Roboto, Helvetica, Arial, sans-serif;
   }
-  .noscroll {
-    overflow: hidden;
-  }
   .serif {
     font-family: Georgia, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
