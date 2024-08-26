@@ -1,4 +1,4 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "styled-components";
 import siteTheme from "./theme";
@@ -40,12 +40,14 @@ const Container = () => {
     // sample usage for Html and Loader: https://drei.pmnd.rs/?path=/docs/misc-useprogress--docs
     // Suspense detects any suspense-enabled children, e.g. https://docs.pmnd.rs/react-three-fiber/api/hooks#useloader
     return (
-        <ThemeProvider theme={siteTheme}>
-            <CookiesProvider defaultSetOptions={{ path: "/" }}>
-                <GlobalStyle />
-                <RouterProvider router={router} />
-            </CookiesProvider>
-        </ThemeProvider>
+        <StrictMode>
+            <ThemeProvider theme={siteTheme}>
+                <CookiesProvider defaultSetOptions={{ path: "/" }}>
+                    <GlobalStyle />
+                    <RouterProvider router={router} />
+                </CookiesProvider>
+            </ThemeProvider>
+        </StrictMode>
     );
 };
 
